@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ta" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>தனியுரிமைக் கொள்கை (Privacy Policy) - தமிழ் கவி (Tamil Kavi)</title>
+  <meta name="description" content="Official Privacy Policy for Tamil Kavi (com.kavithaigalvp.app). Compliant with Google Play Developer Policies, Firebase, AdMob, and WhatsApp Status Saver permissions.">
+  
+  <link rel="icon" type="image/jpeg" href="./assets/images/app_logo.jpg">
+  <link rel="apple-touch-icon" href="./assets/images/app_logo.jpg">
+
+  <!-- Instant FOUC Prevention Script -->
+  <script>
+    (function(){
+      var savedLang = localStorage.getItem('tamilkavi_lang') || 'ta';
+      document.documentElement.setAttribute('lang', savedLang);
+      var savedTheme = localStorage.getItem('tamilkavi_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <!-- FontAwesome & Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="./index.html" class="brand-link">
+        <div class="brand-medallion">
+          <img src="./assets/images/app_logo.jpg" alt="Tamil Kavi">
+        </div>
+        <div class="brand-meta">
+          <span class="brand-title">
+            <span class="lang-ta">தமிழ் கவி</span>
+            <span class="lang-en">Tamil Kavi</span>
+          </span>
+          <span class="brand-subtitle">
+            <span class="lang-ta">PRIVACY & TRUST PORTAL</span>
+            <span class="lang-en">PRIVACY & TRUST PORTAL</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Navigation Menu -->
+      <ul class="nav-menu" id="navMenu">
+        <li>
+          <a href="./index.html" class="nav-link">
+            <span class="lang-ta">முகப்பு (Home)</span>
+            <span class="lang-en">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="./privacy-policy.html" class="nav-link active">
+            <span class="lang-ta">தனியுரிமைக் கொள்கை</span>
+            <span class="lang-en">Privacy Policy</span>
+          </a>
+        </li>
+        <li>
+          <a href="./terms.html" class="nav-link">
+            <span class="lang-ta">விதிமுறைகள்</span>
+            <span class="lang-en">Terms of Service</span>
+          </a>
+        </li>
+        <li>
+          <a href="./delete-account.html" class="nav-link">
+            <span class="lang-ta">கணக்கு நீக்கம்</span>
+            <span class="lang-en">Delete Account</span>
+          </a>
+        </li>
+        <!-- Mobile Drawer CTA -->
+        <li style="width: 100%;">
+          <a href="./delete-account.html" class="btn-cta nav-mobile-cta">
+            <i class="fas fa-user-xmark"></i>
+            <span class="lang-ta">கணக்கு நீக்கம்</span>
+            <span class="lang-en">Delete Account</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Action Utilities -->
+      <div class="header-actions">
+        <button id="langToggle" class="lang-switch-btn" title="மொழி மாற்றம் / Switch Language">
+          <i class="fas fa-globe"></i>
+          <span id="langBtnText">English</span>
+        </button>
+
+        <button id="themeToggle" class="theme-toggle-btn" title="இருள் / ஒளி முறைமை">
+          <i class="fas fa-moon"></i>
+        </button>
+
+        <a href="./delete-account.html" class="btn-cta">
+          <i class="fas fa-user-xmark"></i>
+          <span class="lang-ta">கணக்கு நீக்கம்</span>
+          <span class="lang-en">Delete Account</span>
+        </a>
+
+        <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Legal Container -->
+  <main class="container section" style="padding-top: 40px;">
+    <div class="legal-layout">
+      <!-- Sticky Sidebar -->
+      <aside class="legal-sidebar">
+        <h4 class="legal-sidebar-title">
+          <span class="lang-ta">அட்டவணை • NAVIGATION</span>
+          <span class="lang-en">CONTENTS • NAVIGATION</span>
+        </h4>
+        <ul class="legal-nav-list">
+          <li>
+            <a href="#overview" class="legal-nav-link active">
+              <span class="lang-ta">1. பொது விவரங்கள்</span>
+              <span class="lang-en">1. Overview & Identity</span>
+            </a>
+          </li>
+          <li>
+            <a href="#data-collection" class="legal-nav-link">
+              <span class="lang-ta">2. தரவு சேகரிப்பு</span>
+              <span class="lang-en">2. Data Collection</span>
+            </a>
+          </li>
+          <li>
+            <a href="#permissions" class="legal-nav-link">
+              <span class="lang-ta">3. சேமிப்பக அனுமதி</span>
+              <span class="lang-en">3. Storage & Media Policy</span>
+            </a>
+          </li>
+          <li>
+            <a href="#third-parties" class="legal-nav-link">
+              <span class="lang-ta">4. மூன்றாம் தரப்பு சேவைகள்</span>
+              <span class="lang-en">4. Third-Party Services</span>
+            </a>
+          </li>
+          <li>
+            <a href="#data-usage" class="legal-nav-link">
+              <span class="lang-ta">5. தரவுப் பயன்பாடு</span>
+              <span class="lang-en">5. How We Use Data</span>
+            </a>
+          </li>
+          <li>
+            <a href="#deletion" class="legal-nav-link">
+              <span class="lang-ta">6. கணக்கு நீக்கம்</span>
+              <span class="lang-en">6. Account Deletion Rights</span>
+            </a>
+          </li>
+          <li>
+            <a href="#children" class="legal-nav-link">
+              <span class="lang-ta">7. குழந்தைகள் பாதுகாப்பு</span>
+              <span class="lang-en">7. Children's Privacy</span>
+            </a>
+          </li>
+          <li>
+            <a href="#user-rights" class="legal-nav-link">
+              <span class="lang-ta">8. சர்வதேச உரிமைகள்</span>
+              <span class="lang-en">8. Global Privacy Rights</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="legal-nav-link">
+              <span class="lang-ta">9. தொடர்புக்கு</span>
+              <span class="lang-en">9. Contact & Support</span>
+            </a>
+          </li>
+        </ul>
+
+        <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid var(--border-subtle); font-size: 0.8rem; color: var(--text-dim);">
+          <p><strong style="color: var(--gold-light);">Package:</strong> com.kavithaigalvp.app</p>
+          <p><strong style="color: var(--gold-light);">Version:</strong> 1.0.0+1</p>
+        </div>
+      </aside>
+
+      <!-- Legal Content Card -->
+      <article class="legal-content-card">
+        <!-- Header -->
+        <header class="legal-header">
+          <div class="hero-badge" style="margin-bottom: 12px;">
+            <i class="fas fa-shield-alt"></i>
+            <span>Google Play Developer Policy Compliant</span>
+          </div>
+
+          <h1 style="font-family: var(--font-kavivanar); font-size: 2.4rem; color: #ffffff; line-height: 1.2;">
+            <span class="lang-ta">தனியுரிமைக் கொள்கை (Privacy Policy)</span>
+            <span class="lang-en">Privacy Policy</span>
+          </h1>
+          <p class="hero-tagline" style="font-size: 1.1rem; margin-top: 4px;">
+            <span class="lang-ta">தமிழ் கவி செயலியின் தரவுப் பாதுகாப்பு & தனியுரிமை உறுதிமொழி</span>
+            <span class="lang-en">Official Data Safety, Privacy & User Protection Declaration for Tamil Kavi</span>
+          </p>
+
+          <div class="legal-meta-row">
+            <span class="legal-badge">
+              <i class="fas fa-calendar-check"></i>
+              <span class="lang-ta">அமலுக்கு வந்த நாள்: 19 நவம்பர் 2026</span>
+              <span class="lang-en">Effective Date: November 19, 2026</span>
+            </span>
+            <span><i class="fas fa-code-branch"></i> Version: 1.0.0+1</span>
+            <span>
+              <i class="fas fa-building"></i>
+              <span class="lang-ta">உருவாக்குநர்: புகழ் வேங்கட் (Pugazh Venkat)</span>
+              <span class="lang-en">Developer: Pugazh Venkat</span>
+            </span>
+          </div>
+        </header>
+
+        <!-- ==================== Section 1 ==================== -->
+        <section class="legal-section" id="overview">
+          <!-- Tamil -->
+          <div class="lang-ta">
+            <h2>1. பொது விவரங்கள் & உருவாக்குநர் அடையாளம்</h2>
+            <span class="en-subtitle">1. OVERVIEW & DATA CONTROLLER INFORMATION</span>
+            <p>
+              <strong>'தமிழ் கவி (Tamil Kavi)'</strong> செயலியைப் பயன்படுத்தும் உங்கள் நம்பிக்கையை நாங்கள் மதிக்கிறோம். இச்செயலி அன்னைத் தமிழின் கவிதைச் செல்வத்தை உலகெங்கும் உள்ள இலக்கிய ஆர்வலர்களிடம் கொண்டு சேர்க்கும் நோக்கில் வடிவமைக்கப்பட்டுள்ளது.
+            </p>
+            <p>
+              இத்தனியுரிமைக் கொள்கையானது நீங்கள் எங்களது ஆண்ட்ராய்டு செயலியை (Package: <code>com.kavithaigalvp.app</code>) மற்றும் இணையதளத்தைப் பயன்படுத்தும் போது உங்கள் தகவல்கள் எவ்வாறு சேகரிக்கப்படுகின்றன, எவ்வாறு பாதுகாக்கப்படுகின்றன, மற்றும் எவ்வாறு பயன்படுத்தப்படுகின்றன என்பதைத் தெளிவாக விளக்குகிறது.
+            </p>
+            <div class="notice-box">
+              <h5>உருவாக்குநர் தொடர்பு விவரங்கள் (Data Controller Details):</h5>
+              <p><strong>உருவாக்குநர்:</strong> புகழ் வேங்கட் (Pugazh Venkat)</p>
+              <p><strong>மின்னஞ்சல்:</strong> <a href="mailto:pugazh.developer@gmail.com">pugazh.developer@gmail.com</a></p>
+              <p><strong>செயலியின் பெயர்:</strong> தமிழ் கவி (Tamil Kavi)</p>
+              <p><strong>செயலி தொகுப்புப் பெயர் (Package ID):</strong> com.kavithaigalvp.app</p>
+            </div>
+          </div>
+
+          <!-- English -->
+          <div class="lang-en">
+            <h2>1. Overview & Data Controller Information</h2>
+            <span class="en-subtitle">1. OVERVIEW & DEVELOPER IDENTITY</span>
+            <p>
+              Welcome to <strong>Tamil Kavi ("the App", "we", "us", or "our")</strong>, an authentic mobile literary platform developed by <strong>Pugazh Venkat</strong> to celebrate, write, read, and share Tamil poetry globally.
+            </p>
+            <p>
+              This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you use our Android application (Package Name: <code>com.kavithaigalvp.app</code>) and related website services. We are firmly committed to user privacy and full compliance with the Google Play Developer Content Policy and international data privacy laws.
+            </p>
+            <div class="notice-box">
+              <h5>Data Controller Contact Details:</h5>
+              <p><strong>Developer / Data Controller:</strong> Pugazh Venkat</p>
+              <p><strong>Official Support Email:</strong> <a href="mailto:pugazh.developer@gmail.com">pugazh.developer@gmail.com</a></p>
+              <p><strong>Application Title:</strong> Tamil Kavi (தமிழ் கவி)</p>
+              <p><strong>Android Application ID:</strong> com.kavithaigalvp.app</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==================== Section 2 ==================== -->
+        <section class="legal-section" id="data-collection">
+          <!-- Tamil -->
+          <div class="lang-ta">
+            <h2>2. நாங்கள் சேகரிக்கும் தகவல்கள்</h2>
+            <span class="en-subtitle">2. INFORMATION WE COLLECT</span>
+            <p>நாங்கள் எவ்வித தேவையற்ற அல்லது உணர்வுபூர்வமான தனிநபர் தரவுகளையும் கோருவதில்லை. செயலியின் சீரான இயக்கத்திற்கு தேவையான குறைந்தபட்ச தகவல்கள் மட்டுமே கையாளப்படுகின்றன:</p>
+            
+            <table class="legal-table">
+              <thead>
+                <tr>
+                  <th>தரவு வகை</th>
+                  <th>சேகரிக்கப்படும் விவரங்கள்</th>
+                  <th>நோக்கம்</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>பயனர் கணக்கு</strong></td>
+                  <td>பெயர், மின்னஞ்சல் முகவரி, சுயவிவரப் படம் (Google Sign-In வழியாக).</td>
+                  <td>பயனரின் சுயவிவர மேலாண்மை, கவிதைகளை பதிப்பித்தல் மற்றும் விருப்பமான கவிதைகளை சேமித்தல்.</td>
+                </tr>
+                <tr>
+                  <td><strong>பயனர் படைப்புகள்</strong></td>
+                  <td>பயனர் சுயமாக எழுதி பதிவேற்றும் கவிதைகள், தலைப்புகள், தேர்வு செய்யப்படும் பிரிவுகள்.</td>
+                  <td>கவிதை மன்றத்தில் பிற பயனர்களுடன் பகிர்வதற்கும், கிளவுட் காப்பகத்திற்கும்.</td>
+                </tr>
+                <tr>
+                  <td><strong>தொழில்நுட்பத் தரவு</strong></td>
+                  <td>சாதன மாதிரி (Device Model), ஆண்ட்ராய்டு இயங்குதளப் பதிப்பு (OS Version), Crashlytics அறிக்கை.</td>
+                  <td>செயலியின் பிழைகளைக் கண்டறிந்து சரிசெய்தல் மற்றும் செயல்திறனை மேம்படுத்துதல்.</td>
+                </tr>
+                <tr>
+                  <td><strong>விளம்பர அடையாளங்காட்டிகள்</strong></td>
+                  <td>Google Advertising ID (AAID).</td>
+                  <td>Google AdMob வழியாக விளம்பரங்களை வழங்குவதற்கு (Google Play வழிகாட்டுதல்களின்படி).</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="notice-box">
+              <h5>நாங்கள் ஒருபோதும் சேகரிக்காத தகவல்கள்:</h5>
+              <p>• வங்கி அல்லது கிரெடிட் கார்டு நிதித் தகவல்கள் (Zero Financial Data)</p>
+              <p>• நேரடி GPS இருப்பிட விவரங்கள் (Zero GPS Tracking)</p>
+              <p>• தொலைபேசி தொடர்புகள் அல்லது தொடர்பாளர் பட்டியல் (Zero Contacts Access)</p>
+              <p>• கேமரா அல்லது ஒலிவாங்கித் தரவுகள் (Zero Microphone/Camera Recording)</p>
+            </div>
+          </div>
+
+          <!-- English -->
+          <div class="lang-en">
+            <h2>2. Information We Collect</h2>
+            <span class="en-subtitle">2. CATEGORIES OF DATA PROCESSED</span>
+            <p>We believe in strict data minimization. We only collect the minimal information necessary to deliver our literary and companion tools:</p>
+
+            <table class="legal-table">
+              <thead>
+                <tr>
+                  <th>Data Category</th>
+                  <th>Data Elements Collected</th>
+                  <th>Legitimate Operational Purpose</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>User Account Credentials</strong></td>
+                  <td>Name, email address, profile picture (via Google Sign-In or Firebase Authentication).</td>
+                  <td>User authentication, profile management, and syncing your submitted verses across devices.</td>
+                </tr>
+                <tr>
+                  <td><strong>User-Generated Content</strong></td>
+                  <td>Poetry verses, titles, category tags, and favorite bookmarks submitted by you.</td>
+                  <td>Displaying your creative works in the community and maintaining your public author profile.</td>
+                </tr>
+                <tr>
+                  <td><strong>Technical & Diagnostic Data</strong></td>
+                  <td>Device model, Android OS version, crash logs, and performance metrics via Firebase.</td>
+                  <td>Troubleshooting software bugs, preventing crashes, and optimizing app responsiveness.</td>
+                </tr>
+                <tr>
+                  <td><strong>Advertising Identifiers</strong></td>
+                  <td>Google Advertising ID (AAID) and device ad tokens.</td>
+                  <td>Delivering non-intrusive banner, interstitial, and rewarded ads via Google AdMob.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="notice-box">
+              <h5>What We NEVER Collect or Store:</h5>
+              <p>• Financial, banking, or credit card information (Tamil Kavi is 100% free to use)</p>
+              <p>• Precise GPS location data (we never track your geographical movements)</p>
+              <p>• Phone address book contacts or communication logs</p>
+              <p>• Camera or microphone hardware access</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==================== Section 3 ==================== -->
+        <section class="legal-section" id="permissions">
+          <!-- Tamil -->
+          <div class="lang-ta">
+            <h2>3. சேமிப்பக அனுமதி & வாட்ஸ்அப் நிலை சேமிப்பான் கொள்கை</h2>
+            <span class="en-subtitle">3. STORAGE & MEDIA PERMISSIONS POLICY</span>
+            <p>
+              Google Play கொள்கைகளின்படி, சேமிப்பக அனுமதிகள் குறித்து வெளிப்படையான விளக்கத்தை கீழே வழங்குகிறோம். இச்செயலியில் <code>READ_EXTERNAL_STORAGE</code>, <code>WRITE_EXTERNAL_STORAGE</code>, <code>MANAGE_EXTERNAL_STORAGE</code>, <code>READ_MEDIA_IMAGES</code>, மற்றும் <code>READ_MEDIA_VIDEO</code> ஆகிய அனுமதிகள் பின்வரும் காரணங்களுக்காக மட்டுமே கோரப்படுகின்றன:
+            </p>
+            <ul>
+              <li>
+                <strong>1. வாட்ஸ்அப் நிலை சேமிப்பான் (WhatsApp Status Saver Companion):</strong> பயனர்கள் தங்களின் வாட்ஸ்அப் மற்றும் வாட்ஸ்அப் பிசினஸ் செயலிகளில் பார்த்த தற்காலிக நிலை வீடியோக்கள் மற்றும் புகைப்படங்களை ஒரே இடத்தில் கண்டு, தங்களின் விருப்பப்படி சாதனத்தின் <code>/storage/emulated/0/Pictures/StatusSaver</code> கோப்பகத்தில் சேமித்துக் கொள்வதற்காக மட்டுமே சேமிப்பகப் பாதை அணுகப்படுகிறது.
+              </li>
+              <li>
+                <strong>2. கவிதை அட்டைப் படங்களைச் சேமித்தல் (Poem Card Export):</strong> செயலியில் நீங்கள் உருவாக்கும் அழகான ஓலைச்சுவடி கவிதை அட்டைகளை உயர்தரப் படங்களாக உங்கள் சாதனத்தின் கேலரியில் சேமிக்கவும், நண்பர்களுடன் பகிரவும் சேமிப்பக அனுமதி பயன்படுகிறது.
+              </li>
+            </ul>
+
+            <div class="notice-box danger">
+              <h5>முக்கிய தனியுரிமை உறுதிமொழி (Strict Zero-Data-Harvesting Guarantee):</h5>
+              <p>
+                வாட்ஸ்அப் நிலைக் கோப்புகளோ அல்லது உங்கள் சாதனத்தில் உள்ள தனிப்பட்ட புகைப்படங்கள், குடும்ப ஆல்பங்கள் மற்றும் காணொளிகளோ <strong>எங்களது சர்வர்களுக்கோ அல்லது எந்தவொரு மூன்றாம் தரப்பினருக்கோ ஒருபோதும் பதிவேற்றம் செய்யப்படுவதில்லை, ஸ்கேன் செய்யப்படுவதில்லை, விற்கப்படுவதில்லை</strong>. அனைத்து செயல்பாடுகளும் உங்கள் சாதனத்தின் உள்ளூரிலேயே (100% On-Device) முழுமையாக இயங்குகின்றன.
+              </p>
+            </div>
+          </div>
+
+          <!-- English -->
+          <div class="lang-en">
+            <h2>3. Storage & Media Permissions Policy</h2>
+            <span class="en-subtitle">3. JUSTIFICATION FOR STORAGE ACCESS & WHATSAPP STATUS SAVER</span>
+            <p>
+              In strict compliance with Google Play Developer policies regarding Sensitive Permissions, Tamil Kavi requests <code>READ_EXTERNAL_STORAGE</code>, <code>WRITE_EXTERNAL_STORAGE</code>, <code>MANAGE_EXTERNAL_STORAGE</code>, <code>READ_MEDIA_IMAGES</code>, and <code>READ_MEDIA_VIDEO</code> solely for the following explicit user-initiated functionalities:
+            </p>
+            <ul>
+              <li>
+                <strong>1. WhatsApp Status Saver Companion Utility:</strong> To discover, display within the internal media player, and save temporary photo and video statuses viewed in WhatsApp and WhatsApp Business to your device's Pictures folder (<code>/storage/emulated/0/Pictures/StatusSaver</code>) at your explicit request.
+              </li>
+              <li>
+                <strong>2. Exporting Manuscript Poem Cards:</strong> To render and export custom high-resolution parchment quote cards to your local device gallery so you can share them across social media platforms.
+              </li>
+            </ul>
+
+            <div class="notice-box danger">
+              <h5>Strict Zero-Harvesting Guarantee:</h5>
+              <p>
+                <strong>Tamil Kavi operates 100% on-device for media files.</strong> We NEVER scan, read, copy, upload, or transmit your private photos, personal videos, camera rolls, or unrelated storage directories to our servers or any third-party entity.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==================== Section 4 ==================== -->
+        <section class="legal-section" id="third-parties">
+          <!-- Tamil -->
+          <div class="lang-ta">
+            <h2>4. மூன்றாம் தரப்பு சேவைகள் & நிரல் தொகுதிகள் (SDKs)</h2>
+            <span class="en-subtitle">4. THIRD-PARTY SERVICES & INTEGRATIONS</span>
+            <p>செயலியின் பாதுகாப்பு, அங்கீகாரம் மற்றும் இலவச சேவையைத் தொடர்ந்து வழங்குவதற்காக அங்கீகரிக்கப்பட்ட முன்னணி மூன்றாம் தரப்பு சேவை வழங்குநர்களின் SDK-கள் பயன்படுத்தப்படுகின்றன:</p>
+            <ul>
+              <li><strong>Google Firebase Authentication:</strong> பயனர்கள் கூகுள் கணக்கு மூலம் பாதுகாப்பாக உள்நுழையப் பயன்படுகிறது (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>).</li>
+              <li><strong>Google Cloud Firestore:</strong> பயனர்களின் சுயவிவரங்கள், விருப்பப்பட்டியல் (Favorites), மற்றும் சமர்ப்பிக்கப்படும் பொதுக் கவிதைகளைப் பாதுகாப்பாக கிளவுடில் சேமிக்கப் பயன்படுகிறது.</li>
+              <li><strong>Google Mobile Ads (AdMob):</strong> இச்செயலியை இலவசமாக தொடர்ந்து வழங்குவதற்கு விளம்பரங்களை காட்ட AdMob பயன்படுகிறது (<a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">AdMob Policies</a>).</li>
+              <li><strong>Google Play Services:</strong> செயலியின் உள்கட்டமைப்பு மற்றும் பாதுகாப்பான இயக்கத்திற்கு கூகுள் ப்ளே சேவைகள் பயன்படுகின்றன.</li>
+            </ul>
+          </div>
+
+          <!-- English -->
+          <div class="lang-en">
+            <h2>4. Third-Party Services & SDK Integrations</h2>
+            <span class="en-subtitle">4. EXTERNAL SERVICE PROVIDERS</span>
+            <p>We integrate certified, industry-standard third-party SDKs to provide authentication, cloud storage, crash diagnostics, and monetization:</p>
+            <ul>
+              <li><strong>Google Firebase Authentication:</strong> Secure authentication via Google Sign-In and email. Learn more at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+              <li><strong>Google Cloud Firestore:</strong> Encrypted NoSQL database used to sync published verses, author profiles, and bookmark preferences.</li>
+              <li><strong>Google Mobile Ads (AdMob):</strong> Serves non-personalized and personalized banner, interstitial, and rewarded advertisements in compliance with Google Play ad guidelines (<a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">AdMob Policies</a>).</li>
+              <li><strong>Google Play Services:</strong> Essential Android platform infrastructure supporting secure sign-in and in-app communications.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ==================== Section 5 ==================== -->
+        <section class="legal-section" id="data-usage">
+          <!-- Tamil -->
+          <div class="lang-ta">
+            <h2>5. சேகரிக்கப்பட்ட தரவுகளை நாங்கள் எவ்வாறு பயன்படுத்துகிறோம்?</h2>
+            <span class="en-subtitle">5. HOW WE PROCESS AND PROTECT YOUR DATA</span>
+            <p>சேகரிக்கப்படும் தகவல்கள் பின்வரும் நற்பணிகளுக்கு மட்டுமே பயன்படுத்தப்படுகின்றன:</p>
+            <ol>
+              <li>உங்கள் கணக்கை அங்கீகரித்து பாதுகாப்பான அணுகலை உறுதி செய்தல்.</li>
+              <li>நீங்கள் எழுதிய கவிதைகளை தமிழ் கவி சமூகத்தில் உங்கள் பெயருடன் காட்சிப்படுத்துதல்.</li>
+              <li>உங்களுக்குப் பிடித்த கவிதைகளை உங்கள் கணக்கோடு இணைத்து புக்மார்க் செய்தல்.</li>
+              <li>செயலியின் வேகம், பாதுகாப்பு மற்றும் மென்பொருள் வழுக்களைக் கண்டறிந்து சரிசெய்தல்.</li>
+            </ol>
+            <p><strong>பூஜ்ஜிய வர்த்தக விற்பனை (Zero Data Selling):</strong> பயனர்களின் எவ்வித தனிப்பட்ட தகவல்களும் விளம்பரத் தரகர்களுக்கோ, மார்க்கெட்டிங் நிறுவனங்களுக்கோ அல்லது பிற மூன்றாம் தரப்பினருக்கோ பணத்திற்காகவோ பிற சலுகைகளுக்காகவோ ஒருபோதும் விற்கப்பட மாட்டாது.</p>
+          </div>
+
+          <!-- English -->
+          <div class="lang-en">
+            <h2>5. How We Use and Protect Your Data</h2>
+            <span class="en-subtitle">5. PURPOSE OF DATA PROCESSING</span>
+            <p>All information collected is strictly utilized for legitimate operational requirements:</p>
+            <ol>
+              <li>Authenticating your account credentials securely.</li>
+              <li>Publishing your user-submitted poetry with your chosen author attribution.</li>
+              <li>Syncing your personalized favorites and bookmarks across your devices.</li>
+              <li>Diagnosing software bugs, crash anomalies, and enhancing user experience.</li>
+              <li>Serving relevant advertisements through Google AdMob to keep the platform free.</li>
+            </ol>
+            <p><strong>Zero Data Selling Pledge:</strong> We never sell, rent, monetize, or trade your personal information or content with data brokers or marketing intermediaries under any circumstance.</p>
+          </div>
+        </section>
+
+        <!-- ==================== Section 6 ==================== -->
+        <section class="legal-section" id="deletion">
+          <!-- Tamil -->
+          <div class="lang-ta">
+            <h2>6. கணக்கு மற்றும் தரவு நீக்கம் (Account Deletion Policy)</h2>
+            <span class="en-subtitle">6. USER RIGHT TO DELETE DATA & PROTOCOL</span>
+            <p>
+              Google Play தரவுப் பாதுகாப்பு விதிகளின்படி (Google Play Data Safety Standards), பயனர்கள் தங்களின் கணக்கையும், அதனுடன் தொடர்புடைய அனைத்து தரவுகளையும் எப்போது வேண்டுமானாலும் முழுமையாக நீக்கிக்கொள்ளும் முழு உரிமை வழங்கப்பட்டுள்ளது.
+            </p>
+            <div class="notice-box">
+              <h5>செயலியின் உள்ளேயே கணக்கை நீக்கும் வழிமுறை (In-App Deletion):</h5>
+              <p>1. தமிழ் கவி செயலியைத் திறந்து <strong>அமைப்புகள் (Settings)</strong> பக்கத்திற்குச் செல்லவும்.</p>
+              <p>2. அங்கே உள்ள <strong>'கணக்கு மேலாண்மை (Account Management)'</strong> பிரிவில் <strong>'கணக்கை நீக்குதல் (Delete Account)'</strong> என்பதைத் தேர்ந்தெடுக்கவும்.</p>
+              <p>3. உறுதிப்படுத்தியதும் உங்கள் கணக்கு, நீங்கள் எழுதிய கவிதைகள், மற்றும் கிளவுட் தகவல்கள் அனைத்தும் <strong>நிரந்தரமாக நீக்கப்படும் (Permanently Erased)</strong>.</p>
+            </div>
+            <p>
+              செயலியை அணுக முடியாத நிலையில் உள்ள பயனர்கள் எங்களின் பிரத்யேக <a href="./delete-account.html" style="font-weight: 700; text-decoration: underline;">கணக்கு நீக்கப் பக்கத்தின் மூலமாகவோ</a> அல்லது <code>pugazh.developer@gmail.com</code> என்ற மின்னஞ்சலுக்கு கோரிக்கை வைக்கலாம். கோரிக்கைகள் 7 நாட்களுக்குள் நிறைவேற்றப்படும்.
+            </p>
+          </div>
+
+          <!-- English -->
+          <div class="lang-en">
+            <h2>6. Account and Personal Data Deletion Protocol</h2>
+            <span class="en-subtitle">6. RIGHT TO ERASURE & ACCOUNT DELETION</span>
+            <p>
+              In full compliance with Google Play Data Safety policies, every registered user has the right to permanently erase their account and all associated personal data at any time:
+            </p>
+            <div class="notice-box">
+              <h5>Method 1: Instant In-App Deletion (Recommended):</h5>
+              <p>1. Open the Tamil Kavi app on your mobile device and navigate to <strong>Settings (அமைப்புகள்)</strong>.</p>
+              <p>2. Scroll to the <strong>Account Management (கணக்கு மேலாண்மை)</strong> card.</p>
+              <p>3. Tap the red <strong>Delete Account (கணக்கை நீக்குதல்)</strong> option and confirm. Your Firebase authentication records, published poems, and profile details will be permanently wiped from Cloud Firestore immediately.</p>
+            </div>
+            <p>
+              If you have uninstalled the app or cannot access your device, you can submit an online request via our dedicated <a href="./delete-account.html" style="font-weight: 700; text-decoration: underline;">Account Deletion Web Portal</a> or email us at <code>pugazh.developer@gmail.com</code>. Requests are processed within 7 calendar days.
+            </p>
+          </div>
+        </section>
+
+        <!-- ==================== Section 7 ==================== -->
+        <section class="legal-section" id="children">
+          <!-- Tamil -->
+          <div class="lang-ta">
+            <h2>7. குழந்தைகள் பாதுகாப்பு (Children's Privacy - COPPA)</h2>
+            <span class="en-subtitle">7. AGE LIMITATIONS & COPPA COMPLIANCE</span>
+            <p>
+              தமிழ் கவி செயலி 13 வயதுக்கு மேற்பட்ட பொதுவான இலக்கிய வாசகர்களுக்காக உருவாக்கப்பட்டது. 13 வயதிற்குட்பட்ட குழந்தைகளிடமிருந்து திட்டமிட்டோ அல்லது தெரிந்தே எவ்வித தனிப்பட்ட தகவல்களையும் நாங்கள் சேகரிப்பதில்லை.
+            </p>
+            <p>
+              13 வயதுக்குட்பட்ட குழந்தை தங்களின் தகவல்களை வழங்கியிருப்பது தெரியவந்தால், உடனடியாக அத்தகவல்கள் எங்களது சர்வர்களிலிருந்து அழிக்கப்படும். பெற்றோர்கள் <a href="mailto:pugazh.developer@gmail.com">pugazh.developer@gmail.com</a> வழியாகத் தொடர்பு கொள்ளலாம்.
+            </p>
+          </div>
+
+          <!-- English -->
+          <div class="lang-en">
+            <h2>7. Children's Privacy (COPPA Compliance)</h2>
+            <span class="en-subtitle">7. PROTECTION OF MINORS</span>
+            <p>
+              Tamil Kavi is designed for general audiences and literature enthusiasts aged 13 and above. We do not knowingly solicit, collect, or process personally identifiable information from children under the age of 13.
+            </p>
+            <p>
+              If we discover that a minor under 13 has provided personal details without verified parental consent, we will immediately purge such data from our servers. Parents or guardians may contact us directly at <a href="mailto:pugazh.developer@gmail.com">pugazh.developer@gmail.com</a>.
+            </p>
+          </div>
+        </section>
+
+        <!-- ==================== Section 8 ==================== -->
+        <section class="legal-section" id="user-rights">
+          <!-- Tamil -->
+          <div class="lang-ta">
+            <h2>8. சர்வதேச பயனர் உரிமைகள் (GDPR, CCPA & Indian DPDP Act)</h2>
+            <span class="en-subtitle">8. PRIVACY RIGHTS UNDER GLOBAL LAWS</span>
+            <p>உலகளாவிய சட்டங்களின்படி பயனர்களுக்கு பின்வரும் உரிமைகள் உண்டு:</p>
+            <ul>
+              <li><strong>அணுகல் உரிமை (Right of Access):</strong> உங்களுடைய எந்தத் தரவுகள் சேமிக்கப்பட்டுள்ளன என்பதை அறியும் உரிமை.</li>
+              <li><strong>திருத்தும் உரிமை (Right to Rectification):</strong> தவறான விவரங்களை மாற்றியமைக்கும் உரிமை.</li>
+              <li><strong>அழிக்கும் உரிமை (Right to Erasure):</strong> உங்கள் தரவுகளை நிரந்தரமாக நீக்கும் உரிமை.</li>
+              <li><strong>ஆட்சேபனை உரிமை (Right to Object):</strong> தரவுப் பயன்பாட்டிற்கு மறுப்பு தெரிவிக்கும் உரிமை.</li>
+            </ul>
+          </div>
+
+          <!-- English -->
+          <div class="lang-en">
+            <h2>8. International Privacy Rights</h2>
+            <span class="en-subtitle">8. GDPR, CCPA, & INDIAN DPDP ACT 2023 COMPLIANCE</span>
+            <p>Depending on your jurisdiction, you enjoy the following enforceable statutory rights:</p>
+            <ul>
+              <li><strong>Right to Access & Portability:</strong> Request confirmation of what personal data we hold and receive an export.</li>
+              <li><strong>Right to Rectification:</strong> Request correction of inaccurate personal profile data.</li>
+              <li><strong>Right to Erasure / Right to be Forgotten:</strong> Request complete and permanent deletion of your account and poems.</li>
+              <li><strong>Right to Restrict or Object to Processing:</strong> Withdraw consent for non-essential processing at any time.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ==================== Section 9 ==================== -->
+        <section class="legal-section" id="contact">
+          <!-- Tamil -->
+          <div class="lang-ta">
+            <h2>9. எங்களைத் தொடர்புகொள்ள (Contact & Grievance Redressal)</h2>
+            <span class="en-subtitle">9. SUPPORT & GRIEVANCE REDRESSAL</span>
+            <p>
+              இத்தனியுரிமைக் கொள்கை குறித்த சந்தேகங்கள் அல்லது புகார்கள் ஏதேனும் இருப்பின் நீங்கள் நேரடியாக எங்களை அணுகலாம்:
+            </p>
+            <div class="notice-box">
+              <p><strong>உருவாக்குநர்:</strong> புகழ் வேங்கட் (Pugazh Venkat)</p>
+              <p><strong>மின்னஞ்சல்:</strong> <a href="mailto:pugazh.developer@gmail.com">pugazh.developer@gmail.com</a></p>
+              <p><strong>இணையதளம்:</strong> <a href="https://pugazhvenkat.github.io/tamilkavi-website/">https://pugazhvenkat.github.io/tamilkavi-website/</a></p>
+              <p><strong>செயலி அடையாளம்:</strong> Tamil Kavi (com.kavithaigalvp.app)</p>
+            </div>
+          </div>
+
+          <!-- English -->
+          <div class="lang-en">
+            <h2>9. Grievance Officer & Contact Information</h2>
+            <span class="en-subtitle">9. SUPPORT & INQUIRIES</span>
+            <p>
+              If you have any questions, compliance inquiries, or concerns regarding this Privacy Policy or your personal data, please contact our designated Grievance Officer:
+            </p>
+            <div class="notice-box">
+              <p><strong>Developer / Grievance Officer:</strong> Pugazh Venkat</p>
+              <p><strong>Official Email:</strong> <a href="mailto:pugazh.developer@gmail.com">pugazh.developer@gmail.com</a></p>
+              <p><strong>Website Portal:</strong> <a href="https://pugazhvenkat.github.io/tamilkavi-website/">https://pugazhvenkat.github.io/tamilkavi-website/</a></p>
+              <p><strong>App Package ID:</strong> com.kavithaigalvp.app</p>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="./index.html" class="brand-link">
+            <div class="brand-medallion" style="width: 42px; height: 42px;">
+              <img src="./assets/images/app_logo.jpg" alt="Tamil Kavi">
+            </div>
+            <div class="brand-meta">
+              <span class="brand-title" style="font-size: 1.25rem;">
+                <span class="lang-ta">தமிழ் கவி</span>
+                <span class="lang-en">Tamil Kavi</span>
+              </span>
+              <span class="brand-subtitle">TAMIL KAVI SUITE</span>
+            </div>
+          </a>
+          <p>
+            <span class="lang-ta">
+              அன்னைத் தமிழின் சொல்வளம், கவிதை நயம், மற்றும் பாட்டுத் திறத்தை உலகெங்கும் உள்ள தமிழ் நெஞ்சங்களுக்குக் கொண்டு சேர்க்கும் ஒரு தூய இலக்கிய மேடை.
+            </span>
+            <span class="lang-en">
+              A dedicated literary sanctuary celebrating classical and contemporary Tamil poetry for readers and creators worldwide.
+            </span>
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">
+            <span class="lang-ta">வழிகாட்டி</span>
+            <span class="lang-en">Navigation</span>
+          </h4>
+          <ul class="footer-links">
+            <li><a href="./index.html#home"><span class="lang-ta">முகப்பு (Home)</span><span class="lang-en">Home</span></a></li>
+            <li><a href="./index.html#features"><span class="lang-ta">சிறப்பம்சங்கள்</span><span class="lang-en">Features</span></a></li>
+            <li><a href="./index.html#typing-demo"><span class="lang-ta">தமிழ் தட்டச்சு</span><span class="lang-en">Tamil Typing</span></a></li>
+            <li><a href="./index.html#gallery"><span class="lang-ta">காட்சியகம்</span><span class="lang-en">Gallery</span></a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">
+            <span class="lang-ta">சட்டம் & தனியுரிமை</span>
+            <span class="lang-en">Legal & Compliance</span>
+          </h4>
+          <ul class="footer-links">
+            <li><a href="./privacy-policy.html"><span class="lang-ta">தனியுரிமைக் கொள்கை</span><span class="lang-en">Privacy Policy</span></a></li>
+            <li><a href="./terms.html"><span class="lang-ta">விதிமுறைகள்</span><span class="lang-en">Terms of Service</span></a></li>
+            <li><a href="./delete-account.html"><span class="lang-ta">கணக்கு நீக்கம்</span><span class="lang-en">Delete Account</span></a></li>
+            <li><a href="mailto:pugazh.developer@gmail.com"><span class="lang-ta">உதவி மையம்</span><span class="lang-en">Support</span></a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">
+            <span class="lang-ta">சங்க இலக்கிய வாக்கு</span>
+            <span class="lang-en">Classical Verse</span>
+          </h4>
+          <div class="footer-quote">
+            <span class="lang-ta">
+              "யாதும் ஊரே யாவரும் கேளிர்<br>
+              தீதும் நன்றும் பிறர்தர வாரா!"<br>
+              <span style="font-size: 0.8rem; color: var(--gold-dark); display: block; margin-top: 6px;">— புறநானூறு 192</span>
+            </span>
+            <span class="lang-en">
+              "To us all towns are one, all humans our kin;<br>
+              Good and evil do not come from others!"<br>
+              <span style="font-size: 0.8rem; color: var(--gold-dark); display: block; margin-top: 6px;">— Purananuru 192</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-credits">
+          <span class="lang-ta">
+            வடிவமைப்பு & உருவாக்கம்: <strong>புகழ் வேங்கட் (Pugazh Venkat)</strong> • &copy; 2026 Tamil Kavi.
+          </span>
+          <span class="lang-en">
+            Designed & Developed by <strong>Pugazh Venkat</strong> • &copy; 2026 Tamil Kavi. All rights reserved.
+          </span>
+        </div>
+        <div>
+          <span style="color: var(--text-dim); font-size: 0.8rem;">Package: com.kavithaigalvp.app • v1.0.0+1</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ta" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>கணக்கு & தரவு நீக்கம் (Account & Data Deletion) - தமிழ் கவி (Tamil Kavi)</title>
+  <meta name="description" content="Official Account and Personal Data Deletion Portal for Tamil Kavi (com.kavithaigalvp.app). Compliant with Google Play Data Safety policy.">
+  
+  <link rel="icon" type="image/jpeg" href="./assets/images/app_logo.jpg">
+  <link rel="apple-touch-icon" href="./assets/images/app_logo.jpg">
+
+  <!-- Instant FOUC Prevention Script -->
+  <script>
+    (function(){
+      var savedLang = localStorage.getItem('tamilkavi_lang') || 'ta';
+      document.documentElement.setAttribute('lang', savedLang);
+      var savedTheme = localStorage.getItem('tamilkavi_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <!-- FontAwesome & Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="./index.html" class="brand-link">
+        <div class="brand-medallion">
+          <img src="./assets/images/app_logo.jpg" alt="Tamil Kavi">
+        </div>
+        <div class="brand-meta">
+          <span class="brand-title">
+            <span class="lang-ta">தமிழ் கவி</span>
+            <span class="lang-en">Tamil Kavi</span>
+          </span>
+          <span class="brand-subtitle">DATA SAFETY & ACCOUNT FREEDOM</span>
+        </div>
+      </a>
+
+      <!-- Navigation Menu -->
+      <ul class="nav-menu" id="navMenu">
+        <li>
+          <a href="./index.html" class="nav-link">
+            <span class="lang-ta">முகப்பு (Home)</span>
+            <span class="lang-en">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="./privacy-policy.html" class="nav-link">
+            <span class="lang-ta">தனியுரிமைக் கொள்கை</span>
+            <span class="lang-en">Privacy Policy</span>
+          </a>
+        </li>
+        <li>
+          <a href="./terms.html" class="nav-link">
+            <span class="lang-ta">விதிமுறைகள்</span>
+            <span class="lang-en">Terms of Service</span>
+          </a>
+        </li>
+        <li>
+          <a href="./delete-account.html" class="nav-link active">
+            <span class="lang-ta">கணக்கு நீக்கம்</span>
+            <span class="lang-en">Delete Account</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Action Utilities -->
+      <div class="header-actions">
+        <button id="langToggle" class="lang-switch-btn" title="மொழி மாற்றம் / Switch Language">
+          <i class="fas fa-globe"></i>
+          <span id="langBtnText">English</span>
+        </button>
+
+        <button id="themeToggle" class="theme-toggle-btn" title="இருள் / ஒளி முறைமை">
+          <i class="fas fa-moon"></i>
+        </button>
+
+        <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container section container-narrow" style="padding-top: 40px;">
+    <div class="deletion-box">
+      <div class="section-flourish" style="justify-content: flex-start; margin-bottom: 8px;">
+        <span class="section-tag">GOOGLE PLAY DATA SAFETY COMPLIANT</span>
+      </div>
+
+      <h1 style="font-family: var(--font-kavivanar); font-size: 2.3rem; color: #ffffff; line-height: 1.2; margin-bottom: 6px;">
+        <span class="lang-ta">கணக்கு மற்றும் தரவு நீக்க வழிகாட்டி</span>
+        <span class="lang-en">Account & Data Deletion Portal</span>
+      </h1>
+
+      <span class="feature-subtitle-en" style="font-size: 0.9rem; margin-bottom: 20px;">
+        ACCOUNT & PERSONAL DATA ERASURE PROTOCOL • TAMIL KAVI
+      </span>
+
+      <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 24px;">
+        <span class="lang-ta">
+          Google Play கொள்கைகளின்படி, தமிழ் கவி (<code>com.kavithaigalvp.app</code>) செயலியில் பதிவு செய்த எந்தவொரு பயனரும் தங்களின் கணக்கையும் அதனுடன் தொடர்புடைய அனைத்து தனிப்பட்ட விவரங்களையும் எப்போது வேண்டுமானாலும் அழித்துக்கொள்ளும் முழு உரிமை வழங்கப்பட்டுள்ளது.
+        </span>
+        <span class="lang-en">
+          In strict compliance with Google Play Data Safety policies, every registered user of Tamil Kavi (<code>com.kavithaigalvp.app</code>) maintains the fundamental right to request complete and permanent deletion of their account credentials and all associated personal data.
+        </span>
+      </p>
+
+      <!-- Option 1: In-App Deletion -->
+      <div style="margin-bottom: 32px;">
+        <h3 style="font-family: var(--font-kavivanar); font-size: 1.4rem; color: var(--gold-light); margin-bottom: 12px;">
+          <span class="lang-ta">விருப்பம் 1: செயலியின் அமைப்புகள் வழியாக உடனடி நீக்கம் (பரிந்துரைக்கப்படுகிறது)</span>
+          <span class="lang-en">Method 1: Instant In-App Deletion (Recommended)</span>
+        </h3>
+        <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 14px;">
+          <span class="lang-ta">இம்முறையில் உங்கள் கணக்கு எந்த மனிதத் தலையீடும் இன்றி தானியங்கியாக உடனடியாக நீக்கப்படும்:</span>
+          <span class="lang-en">This automated procedure permanently deletes your account and cloud records immediately without human delay:</span>
+        </p>
+
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div>
+            <h4 style="color: #ffffff; margin-bottom: 4px;">
+              <span class="lang-ta">அமைப்புகள் பக்கத்திற்குச் செல்லவும்</span>
+              <span class="lang-en">Open App Settings</span>
+            </h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">
+              <span class="lang-ta">உங்கள் மொபைலில் 'தமிழ் கவி' செயலியைத் திறந்து, கீழ் மெனுவில் உள்ள அமைப்புகள் (Settings) ஐகானை அழுத்தவும்.</span>
+              <span class="lang-en">Launch the Tamil Kavi app on your Android device and tap the Settings icon in the bottom navigation bar.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div>
+            <h4 style="color: #ffffff; margin-bottom: 4px;">
+              <span class="lang-ta">கணக்கு மேலாண்மை பிரிவைக் கண்டறியவும்</span>
+              <span class="lang-en">Locate Account Management</span>
+            </h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">
+              <span class="lang-ta">'கணக்கு மேலாண்மை (Account Management)' பகுதியில் உங்கள் மின்னஞ்சல் மற்றும் சுயவிவர தகவல்கள் தோன்றும்.</span>
+              <span class="lang-en">Scroll to the 'Account Management' section where your registered email and profile details are displayed.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div>
+            <h4 style="color: #ffffff; margin-bottom: 4px;">
+              <span class="lang-ta">'கணக்கை நீக்குதல் (Delete Account)' என்பதைத் தேர்ந்தெடுக்கவும்</span>
+              <span class="lang-en">Tap Delete Account & Confirm</span>
+            </h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">
+              <span class="lang-ta">சிவப்பு நிறத்தில் உள்ள 'கணக்கை நீக்குதல்' பொத்தானை அழுத்தி உறுதிப்படுத்தவும். உங்கள் கணக்கு மற்றும் கவிதைகள் கிளவுடிலிருந்து நிரந்தரமாக அழிக்கப்படும்.</span>
+              <span class="lang-en">Tap the red 'Delete Account' button and confirm. Your Firebase authentication profile and published verses will be instantly wiped from Cloud Firestore.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Option 2: Web Deletion Request -->
+      <div style="border-top: 1px solid var(--border-subtle); padding-top: 28px;">
+        <h3 style="font-family: var(--font-kavivanar); font-size: 1.4rem; color: var(--gold-light); margin-bottom: 12px;">
+          <span class="lang-ta">விருப்பம் 2: இணையவழியாக கணக்கு நீக்கக் கோரிக்கை அனுப்புதல்</span>
+          <span class="lang-en">Method 2: Submit Web Account Deletion Request</span>
+        </h3>
+        <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 18px;">
+          <span class="lang-ta">செயலியை அணுக முடியாத சூழலில், கீழே உள்ள படிவத்தின் வழியாக கோரிக்கை அனுப்பலாம். எங்களது தரவுப் பாதுகாப்புப் பிரிவு 7 நாட்களுக்குள் உங்கள் கணக்கை நீக்கி உறுதிப்படுத்தும்.</span>
+          <span class="lang-en">If you no longer have access to the app or device, fill out the form below. Our data protection team will verify and permanently delete your account within 7 calendar days.</span>
+        </p>
+
+        <form id="accountDeletionForm" class="deletion-form">
+          <div class="form-group">
+            <label class="form-label" for="delEmail">
+              <span class="lang-ta">பதிவு செய்யப்பட்ட மின்னஞ்சல் முகவரி *</span>
+              <span class="lang-en">Registered Account Email *</span>
+            </label>
+            <input type="email" id="delEmail" class="form-input" placeholder="e.g. user@gmail.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="delUid">
+              <span class="lang-ta">Firebase பயனர் ஐடி (விருப்பப்பட்டால் மட்டும்)</span>
+              <span class="lang-en">Firebase User UID (Optional if known)</span>
+            </label>
+            <input type="text" id="delUid" class="form-input" placeholder="e.g. aB3x... (optional)">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="delReason">
+              <span class="lang-ta">நீக்குவதற்கான காரணம் (விருப்பப்பட்டால் மட்டும்)</span>
+              <span class="lang-en">Reason for Deletion (Optional feedback)</span>
+            </label>
+            <textarea id="delReason" class="form-textarea" rows="3" placeholder="Any feedback..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-cta" style="margin-top: 6px;">
+            <i class="fas fa-paper-plane"></i>
+            <span class="lang-ta">நீக்கக் கோரிக்கையை சமர்ப்பிக்கவும் (Submit Request)</span>
+            <span class="lang-en">Submit Account Deletion Request</span>
+          </button>
+        </form>
+
+        <div id="deletionStatusMsg" style="display: none;"></div>
+      </div>
+
+      <!-- Notice of Data Erased -->
+      <div class="notice-box danger" style="margin-top: 32px;">
+        <h5>
+          <span class="lang-ta">நிரந்தரமாக நீக்கப்படும் தரவுகள்:</span>
+          <span class="lang-en">Personal Data Subject to Permanent Erasure:</span>
+        </h5>
+        <ul style="padding-left: 20px; font-size: 0.9rem; color: var(--text-muted); margin-top: 8px;">
+          <li>
+            <span class="lang-ta">உங்கள் Google Sign-In அல்லது மின்னஞ்சல் அங்கீகார விவரங்கள் (UID, Auth Tokens).</span>
+            <span class="lang-en">Your Google Sign-In and Firebase Authentication credentials (UID, tokens).</span>
+          </li>
+          <li>
+            <span class="lang-ta">உங்கள் பெயர், மின்னஞ்சல் முகவரி மற்றும் சுயவிவரப் படம்.</span>
+            <span class="lang-en">Your display name, email address, and profile avatar link.</span>
+          </li>
+          <li>
+            <span class="lang-ta">நீங்கள் செயலியில் சமர்ப்பித்த அனைத்து கவிதைகள் மற்றும் தலைப்புகள்.</span>
+            <span class="lang-en">All poetry verses, titles, and category contributions authored by you.</span>
+          </li>
+          <li>
+            <span class="lang-ta">உங்கள் விருப்பப்பட்டியல் (Favorite Poems List) மற்றும் புக்மார்க்குகள்.</span>
+            <span class="lang-en">Your personalized favorite poem bookmarks and likes history.</span>
+          </li>
+        </ul>
+        <p style="margin-top: 8px; font-size: 0.85rem; color: #ffb4a2;">
+          <span class="lang-ta"><strong>கவனிக்க:</strong> ஒருமுறை நீக்கப்பட்ட கணக்கையோ அல்லது அதன் கவிதைகளையோ மீண்டும் மீட்டெடுக்க இயலாது.</span>
+          <span class="lang-en"><strong>Notice:</strong> Account deletion is permanent and irreversible. Erased records cannot be recovered.</span>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="./index.html" class="brand-link">
+            <div class="brand-medallion" style="width: 42px; height: 42px;">
+              <img src="./assets/images/app_logo.jpg" alt="Tamil Kavi">
+            </div>
+            <div class="brand-meta">
+              <span class="brand-title" style="font-size: 1.25rem;">
+                <span class="lang-ta">தமிழ் கவி</span>
+                <span class="lang-en">Tamil Kavi</span>
+              </span>
+              <span class="brand-subtitle">TAMIL KAVI SUITE</span>
+            </div>
+          </a>
+          <p>
+            <span class="lang-ta">
+              அன்னைத் தமிழின் சொல்வளம், கவிதை நயம், மற்றும் பாட்டுத் திறத்தை உலகெங்கும் உள்ள தமிழ் நெஞ்சங்களுக்குக் கொண்டு சேர்க்கும் ஒரு தூய இலக்கிய மேடை.
+            </span>
+            <span class="lang-en">
+              A dedicated literary sanctuary celebrating classical and contemporary Tamil poetry for readers and creators worldwide.
+            </span>
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">
+            <span class="lang-ta">வழிகாட்டி</span>
+            <span class="lang-en">Navigation</span>
+          </h4>
+          <ul class="footer-links">
+            <li><a href="./index.html#home"><span class="lang-ta">முகப்பு (Home)</span><span class="lang-en">Home</span></a></li>
+            <li><a href="./privacy-policy.html"><span class="lang-ta">தனியுரிமைக் கொள்கை</span><span class="lang-en">Privacy Policy</span></a></li>
+            <li><a href="./terms.html"><span class="lang-ta">விதிமுறைகள்</span><span class="lang-en">Terms of Service</span></a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">
+            <span class="lang-ta">நேரடி தொடர்பு</span>
+            <span class="lang-en">Direct Contact</span>
+          </h4>
+          <ul class="footer-links">
+            <li><a href="mailto:pugazh.developer@gmail.com">pugazh.developer@gmail.com</a></li>
+            <li><span style="color: var(--text-dim); font-size: 0.8rem;">Package: com.kavithaigalvp.app</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">
+            <span class="lang-ta">சங்க இலக்கிய வாக்கு</span>
+            <span class="lang-en">Classical Verse</span>
+          </h4>
+          <div class="footer-quote">
+            <span class="lang-ta">
+              "யாதும் ஊரே யாவரும் கேளிர்<br>
+              தீதும் நன்றும் பிறர்தர வாரா!"<br>
+              <span style="font-size: 0.8rem; color: var(--gold-dark); display: block; margin-top: 6px;">— புறநானூறு 192</span>
+            </span>
+            <span class="lang-en">
+              "To us all towns are one, all humans our kin;<br>
+              Good and evil do not come from others!"<br>
+              <span style="font-size: 0.8rem; color: var(--gold-dark); display: block; margin-top: 6px;">— Purananuru 192</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-credits">
+          <span class="lang-ta">வடிவமைப்பு & உருவாக்கம்: <strong>புகழ் வேங்கட் (Pugazh Venkat)</strong> • &copy; 2026 Tamil Kavi.</span>
+          <span class="lang-en">Designed & Developed by <strong>Pugazh Venkat</strong> • &copy; 2026 Tamil Kavi.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ta" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>தமிழ் கவி (Tamil Kavi) - தமிழின் கவிதை உலகம் | எழுது • பகிர்</title>
+  <meta name="description" content="தமிழ் கவி (Tamil Kavi) - அன்னைத் தமிழின் சொல்வளம், கவிதை நயம், மற்றும் பாட்டுத் திறத்தை உலகெங்கும் உள்ள தமிழ் நெஞ்சங்களுக்குக் கொண்டு சேர்க்கும் பிரத்யேக இலக்கிய செயலி. ஏட்டுச்சுவடி வடிவமைப்பு, உடனடி தமிழ் தட்டச்சு மற்றும் AI கவிதை உதவியாளருடன்.">
+  <meta name="keywords" content="Tamil Kavi, தமிழ் கவி, தமிழ் கவிதைகள், Tamil Kavithaigal, Tamil poems, Tamil typing, AI Poet, WhatsApp Status Saver, Bharathiyar kavithaigal, Pugazh Venkat">
+  <meta name="author" content="Pugazh Venkat">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="தமிழ் கவி (Tamil Kavi) - உன் வரிகள் உலகை வெல்லட்டும்!">
+  <meta property="og:description" content="எழுதுங்கள், வாசியுங்கள், பகிருங்கள்! தமிழின் கவிதை உலகம். ஏட்டுச்சுவடி வடிவமைப்பு மற்றும் தனித்துவ தமிழ் தட்டச்சு வசதியுடன்.">
+  <meta property="og:image" content="./assets/images/banner.jpg">
+  <meta property="og:url" content="https://pugazhvenkat.github.io/tamilkavi-website/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="./assets/images/app_logo.jpg">
+  <link rel="apple-touch-icon" href="./assets/images/app_logo.jpg">
+
+  <!-- Instant FOUC Prevention Script -->
+  <script>
+    (function(){
+      var savedLang = localStorage.getItem('tamilkavi_lang') || 'ta';
+      document.documentElement.setAttribute('lang', savedLang);
+      var savedTheme = localStorage.getItem('tamilkavi_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <!-- FontAwesome & Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="./index.html" class="brand-link">
+        <div class="brand-medallion">
+          <img src="./assets/images/app_logo.jpg" alt="Tamil Kavi Logo">
+        </div>
+        <div class="brand-meta">
+          <span class="brand-title">
+            <span class="lang-ta">தமிழ் கவி</span>
+            <span class="lang-en">Tamil Kavi</span>
+          </span>
+          <span class="brand-subtitle">
+            <span class="lang-ta">TAMIL KAVI • கவிதைகள்</span>
+            <span class="lang-en">POETRY & CREATIVE SUITE</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Navigation Menu -->
+      <ul class="nav-menu" id="navMenu">
+        <li>
+          <a href="#home" class="nav-link active">
+            <span class="lang-ta">முகப்பு</span>
+            <span class="lang-en">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#features" class="nav-link">
+            <span class="lang-ta">சிறப்பம்சங்கள்</span>
+            <span class="lang-en">Features</span>
+          </a>
+        </li>
+        <li>
+          <a href="#typing-demo" class="nav-link">
+            <span class="lang-ta">தமிழ் தட்டச்சு</span>
+            <span class="lang-en">Tamil Typing</span>
+          </a>
+        </li>
+        <li>
+          <a href="#gallery" class="nav-link">
+            <span class="lang-ta">காட்சியகம்</span>
+            <span class="lang-en">Gallery</span>
+          </a>
+        </li>
+        <li>
+          <a href="./privacy-policy.html" class="nav-link">
+            <span class="lang-ta">தனியுரிமைக் கொள்கை</span>
+            <span class="lang-en">Privacy Policy</span>
+          </a>
+        </li>
+        <li>
+          <a href="./terms.html" class="nav-link">
+            <span class="lang-ta">விதிமுறைகள்</span>
+            <span class="lang-en">Terms</span>
+          </a>
+        </li>
+        <li>
+          <a href="./delete-account.html" class="nav-link">
+            <span class="lang-ta">கணக்கு நீக்கம்</span>
+            <span class="lang-en">Delete Account</span>
+          </a>
+        </li>
+        <!-- Mobile Drawer CTA -->
+        <li style="width: 100%;">
+          <a href="#download" class="btn-cta nav-mobile-cta">
+            <i class="fab fa-google-play"></i>
+            <span class="lang-ta">செயலியைப் பதிவிறக்குக</span>
+            <span class="lang-en">Download App</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Action Utilities -->
+      <div class="header-actions">
+        <!-- Language Switcher Pill -->
+        <button id="langToggle" class="lang-switch-btn" title="மொழி மாற்றம் / Switch Language">
+          <i class="fas fa-globe"></i>
+          <span id="langBtnText">English</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="theme-toggle-btn" title="இருள் / ஒளி முறைமை (Theme)">
+          <i class="fas fa-moon"></i>
+        </button>
+
+        <!-- Desktop Download CTA -->
+        <a href="#download" class="btn-cta">
+          <i class="fab fa-google-play"></i>
+          <span class="lang-ta">பதிவிறக்குக</span>
+          <span class="lang-en">Download</span>
+        </a>
+
+        <!-- Mobile Nav Hamburger -->
+        <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-feather-alt sparkle"></i>
+          <span class="lang-ta">✨ தமிழின் கவிதை உலகம் • Classical Poetry Suite</span>
+          <span class="lang-en">✨ The World of Tamil Poetry • Classical Poetry Suite</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="gradient-text">
+            <span class="lang-ta">தமிழ் கவி</span>
+            <span class="lang-en">Tamil Kavi</span>
+          </span>
+          <span class="lang-ta">உன் வரிகள் உலகை வெல்லட்டும்!</span>
+          <span class="lang-en">Let Your Verses Conquer the World!</span>
+        </h1>
+
+        <span class="hero-tagline">
+          <span class="lang-ta">"எழுதுங்கள், வாசியுங்கள், பகிருங்கள்!"</span>
+          <span class="lang-en">"Write, Read, Share! The Classical Tamil Poetry Sanctuary"</span>
+        </span>
+
+        <p class="hero-description">
+          <span class="lang-ta">
+            அன்னைத் தமிழின் சொல்வளம், கவிதை நயம், மற்றும் பாட்டுத் திறத்தை உலகெங்கும் உள்ள தமிழ் நெஞ்சங்களுக்குக் கொண்டு சேர்க்கும் பிரத்யேக இலக்கிய செயலி. ஏட்டுச்சுவடி வடிவமைப்பு, உடனடி தமிழ் தட்டச்சு மற்றும் AI கவிதை உதவியாளருடன்.
+          </span>
+          <span class="lang-en">
+            A rich literary platform preserving and celebrating Tamil poetry for creators worldwide. Experience authentic palm-leaf manuscript aesthetics, integrated phonetic Tamil typing, AI poetic assistance, and royal poem card sharing.
+          </span>
+        </p>
+
+        <div class="hero-actions">
+          <a href="#download" class="btn-cta">
+            <i class="fab fa-google-play"></i>
+            <span class="lang-ta">செயலியைப் பதிவிறக்குக</span>
+            <span class="lang-en">Download on Google Play</span>
+          </a>
+          <a href="./privacy-policy.html" class="btn-secondary">
+            <i class="fas fa-shield-alt"></i>
+            <span class="lang-ta">தனியுரிமைக் கொள்கை</span>
+            <span class="lang-en">Privacy Policy</span>
+          </a>
+          <a href="#typing-demo" class="btn-secondary">
+            <i class="fas fa-keyboard"></i>
+            <span class="lang-ta">தட்டச்சு சோதனை</span>
+            <span class="lang-en">Try Typing Demo</span>
+          </a>
+        </div>
+
+        <!-- Hero Stats -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">4,000+</span>
+            <span class="stat-label">
+              <span class="lang-ta">கவிதைகள் & சுவடிகள்</span>
+              <span class="lang-en">Poems & Verses</span>
+            </span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">4.9 ★</span>
+            <span class="stat-label">
+              <span class="lang-ta">பயனர் மதிப்பீடு</span>
+              <span class="lang-en">User Rating</span>
+            </span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">
+              <span class="lang-ta">பாதுகாப்பான மேடை</span>
+              <span class="lang-en">Safe & Private</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Frame -->
+      <div class="hero-visual">
+        <div class="hero-banner-card">
+          <img src="./assets/images/banner.jpg" alt="Tamil Kavi App Banner">
+          
+          <!-- Floating Feature Pills -->
+          <div class="floating-pill floating-pill-1">
+            <i class="fas fa-robot"></i>
+            <span class="lang-ta">AI கவிஞர் Co-pilot</span>
+            <span class="lang-en">AI Poet Co-pilot</span>
+          </div>
+
+          <div class="floating-pill floating-pill-2">
+            <i class="fas fa-scroll"></i>
+            <span class="lang-ta">ஏட்டுச்சுவடி வடிவமைப்பு</span>
+            <span class="lang-en">Manuscript Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Matrix -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-flourish">
+          <span class="section-tag">ARCHITECTURAL EXCELLENCE</span>
+        </div>
+        <h2 class="section-title">
+          <span class="lang-ta">முக்கிய சிறப்பம்சங்கள்</span>
+          <span class="lang-en">Core Features & Architecture</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="lang-ta">தமிழரின் தொன்மையும் அதிநவீன மொபைல் தொழில்நுட்பமும் ஒருங்கே சங்கமிக்கும் உன்னத கவிதை தளம்</span>
+          <span class="lang-en">Where centuries-old Tamil literary traditions meet cutting-edge modern mobile engineering</span>
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1: Ancient Manuscript Reading -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <i class="fas fa-scroll"></i>
+          </div>
+          <h3 class="feature-title">
+            <span class="lang-ta">ஏட்டுச்சுவடி வாசிப்பு நயம்</span>
+            <span class="lang-en">Ancient Manuscript Experience</span>
+          </h3>
+          <span class="feature-subtitle-en">ANCIENT MANUSCRIPT EXPERIENCE</span>
+          <p class="feature-desc">
+            <span class="lang-ta">
+              பழங்கால பனை ஓலைச்சுவடிகளின் பின்னணியிலும், கண்களுக்கு இதமான இருள் முறைமையிலும் (Dark Chamber) காதல், நட்பு, தாய், இயற்கை, உத்வேகம், வாழ்க்கை போன்ற பன்னிரு வகைக் கவிதைகளை வாசித்து மகிழுங்கள். எழுத்து அளவை மாற்றியமைக்கும் பிரத்யேக Slider வசதியுடன்.
+            </span>
+            <span class="lang-en">
+              Immerse yourself in classical palm-leaf parchment textures and eye-friendly Dark Chamber themes across 12+ categories (Love, Friendship, Mother, Nature, Inspiration, Philosophy). Features a real-time typography font size slider for optimal reading.
+            </span>
+          </p>
+          <div class="feature-badge-row">
+            <span class="badge-pill">Font Size Slider</span>
+            <span class="badge-pill">Dark & Light Mode</span>
+            <span class="badge-pill">12+ Categories</span>
+          </div>
+        </div>
+
+        <!-- Feature 2: In-App Tamil Transliteration Engine -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <i class="fas fa-keyboard"></i>
+          </div>
+          <h3 class="feature-title">
+            <span class="lang-ta">தனித்துவ தமிழ் தட்டச்சு</span>
+            <span class="lang-en">Integrated Phonetic Typing</span>
+          </h3>
+          <span class="feature-subtitle-en">INTEGRATED PHONETIC TYPING ENGINE</span>
+          <p class="feature-desc">
+            <span class="lang-ta">
+              வெளி விசைப்பலகைகள் ஏதுமின்றி, ஆங்கில எழுத்துக்களில் Tanglish வடிவில் தட்டச்சு செய்தாலே (எ.கா: 'kavithai', 'bharathi') அது தானாகவே தூய தமிழில் மாறும் நுண்ணிய ஒலிபெயர்ப்பு இயந்திரம் (Phonetic Transliteration Engine).
+            </span>
+            <span class="lang-en">
+              No need for third-party Tamil keyboards. Simply type phonetic English (Tanglish, e.g., 'kavithai', 'bharathiyar', 'amma') and the built-in transliteration engine instantly converts it into pure, accurate Tamil with intelligent word suggestions.
+            </span>
+          </p>
+          <div class="feature-badge-row">
+            <span class="badge-pill">No External Keyboard</span>
+            <span class="badge-pill">Smart Word Suggestions</span>
+            <span class="badge-pill">Tanglish to Tamil</span>
+          </div>
+        </div>
+
+        <!-- Feature 3: AI Poet Studio & Co-pilot -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <i class="fas fa-wand-magic-sparkles"></i>
+          </div>
+          <h3 class="feature-title">
+            <span class="lang-ta">AI கவிஞர் & படைப்புக்கூடம்</span>
+            <span class="lang-en">AI Poet Studio & Visuals</span>
+          </h3>
+          <span class="feature-subtitle-en">AI POET & GENERATIVE VISUALS</span>
+          <p class="feature-desc">
+            <span class="lang-ta">
+              நீங்கள் தொடங்கும் கவிதைக்கு எதுகை, மோனை நயத்துடன் அடுத்தடுத்த வரிகளை பரிந்துரைக்கும் AI கவிதை உதவியாளர். அத்துடன் உங்கள் கவிதையின் உணர்வுக்குப் பொருத்தமான கலை நயமிக்க பின்புலப் படங்களை தானாக உருவாக்கும் தொழில்நுட்பம்.
+            </span>
+            <span class="lang-en">
+              Co-write verses with our intelligent AI poet assistant, offering rhyme matching, classical alliteration suggestions, and stanza completions. Pair your poetry with automated artistic background cards crafted to mirror the emotional tone of your words.
+            </span>
+          </p>
+          <div class="feature-badge-row">
+            <span class="badge-pill">Gemini AI Assistant</span>
+            <span class="badge-pill">Rhyme Matching</span>
+            <span class="badge-pill">Offline Stanza Library</span>
+          </div>
+        </div>
+
+        <!-- Feature 4: Royal Poem Card Generator & Sharing -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <i class="fas fa-share-nodes"></i>
+          </div>
+          <h3 class="feature-title">
+            <span class="lang-ta">ஓலைச்சுவடி கவிதை அட்டைப் பகிர்வு</span>
+            <span class="lang-en">Ornate Poem Card Export</span>
+          </h3>
+          <span class="feature-subtitle-en">ORNATE PARCHMENT CARD EXPORT</span>
+          <p class="feature-desc">
+            <span class="lang-ta">
+              உங்கள் கவிதைகளை தங்க முத்திரையுடனும் (Royal Wax Seal), பழங்கால விளிம்பு வேலைப்பாடுகளுடனும் உயர்தரப் பட அட்டையாக மாற்றி WhatsApp, Instagram கதைகள், Facebook மற்றும் Telegram ஆகியவற்றில் ஒரே தொடுதலில் பகிரலாம்.
+            </span>
+            <span class="lang-en">
+              Render your poems into high-resolution aesthetic parchment cards featuring authentic royal wax seals, filigree borders, and author signatures. Share instantly to WhatsApp status, Instagram Stories, Facebook, and Telegram with a single tap.
+            </span>
+          </p>
+          <div class="feature-badge-row">
+            <span class="badge-pill">HD Graphic Render</span>
+            <span class="badge-pill">WhatsApp Status Direct</span>
+            <span class="badge-pill">Wax Seal Stamping</span>
+          </div>
+        </div>
+
+        <!-- Feature 5: WhatsApp Status Saver & Direct Chat -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <h3 class="feature-title">
+            <span class="lang-ta">வாட்ஸ்அப் நிலை சேமிப்பான் & அரட்டை</span>
+            <span class="lang-en">WhatsApp Status Saver & Chat</span>
+          </h3>
+          <span class="feature-subtitle-en">WHATSAPP COMPANION UTILITY</span>
+          <p class="feature-desc">
+            <span class="lang-ta">
+              உங்கள் நண்பர்களின் வாட்ஸ்அப் (Standard & Business) புகைப்படங்கள் மற்றும் வீடியோக்களை ஒரே இடத்தில் கண்டு, உள்நுழைந்த வீடியோ பிளேயரில் இயக்கி உங்கள் சாதனத்தில் சேமிக்கும் பிரத்யேக வசதி. மேலும் எண்ணைச் சேமிக்காமல் வாட்ஸ்அப்பில் நேரடியாக செய்தி அனுப்பும் வசதி.
+            </span>
+            <span class="lang-en">
+              Built-in companion utility to discover, watch in the integrated video player, and save WhatsApp & WhatsApp Business status photos and videos directly to your device storage. Also open direct WhatsApp chats without saving contact numbers.
+            </span>
+          </p>
+          <div class="feature-badge-row">
+            <span class="badge-pill">Photo & Video Saver</span>
+            <span class="badge-pill">Direct Chat Link</span>
+            <span class="badge-pill">100% On-Device Safe</span>
+          </div>
+        </div>
+
+        <!-- Feature 6: Secure Cloud Sync & Community -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <i class="fas fa-shield-halved"></i>
+          </div>
+          <h3 class="feature-title">
+            <span class="lang-ta">பாதுகாப்பான கவிஞர் சமுதாயம்</span>
+            <span class="lang-en">Secure Cloud & Community</span>
+          </h3>
+          <span class="feature-subtitle-en">FIREBASE CLOUD & USER PRIVACY</span>
+          <p class="feature-desc">
+            <span class="lang-ta">
+              Google Sign-In வழியாகப் பாதுகாப்பாக இணைந்துகொள்ளுங்கள். உங்கள் கவிதைகள் கிளவுடில் பதியப்படும். விருப்பமான கவிதைகளை புக்மார்க் செய்யுங்கள். விரும்பினால் அமைப்புகள் பக்கத்தில் ஒரே கிளிக்கில் கணக்கை முழுமையாக நீக்கும் சுதந்திரம் (GDPR Compliant).
+            </span>
+            <span class="lang-en">
+              Sign in securely via Google Authentication. Cloud Firestore safely stores your submitted verses, favorites, and reader engagements. Maintain complete control with our one-click in-app account deletion tool complying with Google Play Data Safety policies.
+            </span>
+          </p>
+          <div class="feature-badge-row">
+            <span class="badge-pill">Google Sign-In</span>
+            <span class="badge-pill">Cloud Firestore</span>
+            <span class="badge-pill">1-Click Account Deletion</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Tamil Typing Demo Section -->
+  <section class="section playground-section" id="typing-demo">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-flourish">
+          <span class="section-tag">LIVE INTERACTIVE PLAYGROUND</span>
+        </div>
+        <h2 class="section-title">
+          <span class="lang-ta">தமிழ் தட்டச்சு சோதனை களம்</span>
+          <span class="lang-en">Interactive Tamil Typing Demo</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="lang-ta">
+            செயலியின் தனித்துவ தமிழ் ஒலிபெயர்ப்பு தொழில்நுட்பத்தை இங்கேயே சோதித்துப் பாருங்கள். ஆங்கில எழுத்துக்களில் Tanglish தட்டச்சு செய்யுங்கள் — அது கணப்பொழுதில் தூய தமிழில் ஓலைச்சுவடியில் ஒளிரும்!
+          </span>
+          <span class="lang-en">
+            Try the app's marquee phonetic transliteration engine right here in your browser. Type English letters in Tanglish and watch it transform into pure, classical Tamil in real-time!
+          </span>
+        </p>
+      </div>
+
+      <div class="typing-demo-box">
+        <!-- Input Column -->
+        <div class="typing-input-col">
+          <label class="demo-label" for="tanglishInput">
+            <i class="fas fa-keyboard"></i>
+            <span class="lang-ta">ஆங்கிலத்தில் தட்டச்சு செய்யவும் (Tanglish Input):</span>
+            <span class="lang-en">Type phonetically here (Tanglish):</span>
+          </label>
+          <textarea id="tanglishInput" class="demo-textarea" placeholder="Type here in Tanglish, e.g. vanakkam, thamizh, kavithai, amma, bharathi..."></textarea>
+
+          <div class="sample-prompts-row">
+            <span style="font-size: 0.8rem; color: var(--text-dim); font-weight: 600;">
+              <span class="lang-ta">மாதிரி சொற்கள்:</span>
+              <span class="lang-en">Sample Words:</span>
+            </span>
+            <button class="sample-tag" data-sample="yathum oore yavarum kelir">yathum oore yavarum kelir</button>
+            <button class="sample-tag" data-sample="bharathiyar kavithaigal">bharathiyar kavithaigal</button>
+            <button class="sample-tag" data-sample="amma un anbu perithu">amma un anbu perithu</button>
+            <button class="sample-tag" data-sample="thamizhil kavithai ezhuthuvom">thamizhil kavithai ezhuthuvom</button>
+          </div>
+        </div>
+
+        <!-- Output Column (Ancient Manuscript Card) -->
+        <div class="typing-output-col">
+          <div class="parchment-preview-card">
+            <div class="parchment-top">
+              <span class="parchment-stamp">✨ தமிழ் கவி ஏடு • MANUSCRIPT</span>
+              <div class="wax-seal-badge" title="Royal Wax Seal">கவி</div>
+            </div>
+
+            <div id="tamilOutput" class="parchment-text">
+              யாதும் ஊரே யாவரும் கேளிர்!
+            </div>
+
+            <div class="parchment-footer">
+              <span>
+                <span class="lang-ta">— பாரதியார் மரபு • தமிழ் இலக்கியம்</span>
+                <span class="lang-en">— Bharathiyar Heritage • Tamil Literature</span>
+              </span>
+              <span>
+                <span class="lang-ta">தமிழ் கவி செயலி</span>
+                <span class="lang-en">Tamil Kavi Suite</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual Artwork & Screenshot Showcase -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-flourish">
+          <span class="section-tag">ROYAL VISUAL AESTHETICS</span>
+        </div>
+        <h2 class="section-title">
+          <span class="lang-ta">செயலியின் தோற்ற அழகு</span>
+          <span class="lang-en">Visual Aesthetics & Gallery</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="lang-ta">
+            பழங்கால தமிழ் மன்னர்களின் ஏடுகளையும் பொன்னிற மெருகூட்டல்களையும் நவீன திரைகளில் உயிர்ப்பிக்கும் கலை வடிவமைப்பு
+          </span>
+          <span class="lang-en">
+            Classical palm-leaf manuscripts and royal gold highlights brought to life for contemporary screens
+          </span>
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="./assets/images/preview_sangam.jpg" alt="Sangam Poetry Preview">
+          <div class="gallery-info">
+            <h4 class="gallery-title">
+              <span class="lang-ta">சங்க இலக்கிய பின்னணி</span>
+              <span class="lang-en">Classical Sangam Themes</span>
+            </h4>
+            <p class="gallery-desc">
+              <span class="lang-ta">மருதம் மற்றும் நெய்தல் நிலக்காட்சிகளை சித்தரிக்கும் மரபுசார் கவிதை அட்டைகள்.</span>
+              <span class="lang-en">Evoking classical Sangam landscapes (Marutham and Neithal) for pastoral and emotional verses.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="./assets/images/preview_realistic.jpg" alt="Realistic Sunset Preview">
+          <div class="gallery-info">
+            <h4 class="gallery-title">
+              <span class="lang-ta">சூரிய அஸ்தமன வண்ணங்கள்</span>
+              <span class="lang-en">Golden Sunset Hues</span>
+            </h4>
+            <p class="gallery-desc">
+              <span class="lang-ta">காதல் மற்றும் தத்துவக் கவிதைகளுக்கு ஏற்ற மாலைக்கால இதமான பொன்னிற பின்னணி.</span>
+              <span class="lang-en">Warm golden tones curated for romantic, philosophical, and reflective poetry cards.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="./assets/images/oldletter.jpg" alt="Old Letter Manuscript">
+          <div class="gallery-info">
+            <h4 class="gallery-title">
+              <span class="lang-ta">பழங்கால மடல் அமைப்பு</span>
+              <span class="lang-en">Ancient Epistolary Parchment</span>
+            </h4>
+            <p class="gallery-desc">
+              <span class="lang-ta">புலவர்கள் தீட்டிய ஓலைச்சுவடி மற்றும் தூய தமிழ் கைஎழுத்து போன்ற வாசிப்பு உணர்வு.</span>
+              <span class="lang-en">Authentic parchment textures offering the tactile delight of ancient hand-inscribed manuscripts.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy & Trust Guarantees -->
+  <section class="section" style="background: rgba(12, 6, 3, 0.4); border-top: 1px solid var(--border-subtle);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-flourish">
+          <span class="section-tag">DATA SECURITY & USER FREEDOM</span>
+        </div>
+        <h2 class="section-title">
+          <span class="lang-ta">உங்கள் பாதுகாப்பு • எங்களின் உறுதிப்பாடு</span>
+          <span class="lang-en">Your Privacy • Our Ironclad Pledge</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="lang-ta">தமிழ் கவி செயலி பயனர்களின் தனிப்பட்ட சுதந்திரத்தையும் தரவு பாதுகாப்பையும் முதன்மையாக மதிக்கிறது.</span>
+          <span class="lang-en">Tamil Kavi strictly safeguards your privacy and adheres to international data protection standards.</span>
+        </p>
+      </div>
+
+      <div class="guarantee-grid">
+        <div class="guarantee-item">
+          <div class="guarantee-icon"><i class="fas fa-user-shield"></i></div>
+          <div>
+            <h4>
+              <span class="lang-ta">பூஜ்ஜிய தரவு விற்பனை</span>
+              <span class="lang-en">Zero Data Selling</span>
+            </h4>
+            <p>
+              <span class="lang-ta">உங்கள் பெயர், மின்னஞ்சல் அல்லது கவிதைகள் எந்தவொரு மூன்றாம் தரப்பு நிறுவனத்திற்கும் ஒருபோதும் விற்கப்படவோ பகிரப்படவோ மாட்டாது.</span>
+              <span class="lang-en">We never sell, monetize, or broker your personal information or submitted poetry to any third-party marketing firms.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="guarantee-item">
+          <div class="guarantee-icon"><i class="fas fa-folder-open"></i></div>
+          <div>
+            <h4>
+              <span class="lang-ta">உள்ளூர் சேமிப்பகம் மட்டுமே</span>
+              <span class="lang-en">100% On-Device Media</span>
+            </h4>
+            <p>
+              <span class="lang-ta">WhatsApp Status சேமிப்பு சாதனத்தின் உள்ளூரிலேயே மட்டுமே நடக்கும். உங்கள் அந்தரங்க புகைப்படங்கள் எங்களது சர்வர்க்கு பதிவேற்றப்படுவதில்லை.</span>
+              <span class="lang-en">WhatsApp status media is processed exclusively on your device. We never scan, upload, or transmit your private photos and videos.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="guarantee-item">
+          <div class="guarantee-icon"><i class="fas fa-trash-can"></i></div>
+          <div>
+            <h4>
+              <span class="lang-ta">கணக்கை நீக்கும் உரிமை</span>
+              <span class="lang-en">Account Deletion Freedom</span>
+            </h4>
+            <p>
+              <span class="lang-ta">அமைப்புகள் பக்கத்தில் ஒரே தட்டலில் உங்கள் கணக்கையும், கிளவுடில் உள்ள அனைத்து விவரங்களையும் உடனடியாக நீக்கிக்கொள்ளலாம்.</span>
+              <span class="lang-en">Enjoy complete autonomy. Delete your account and cloud data permanently in one click right inside the app settings.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="guarantee-item">
+          <div class="guarantee-icon"><i class="fas fa-lock"></i></div>
+          <div>
+            <h4>
+              <span class="lang-ta">SSL / குறியாக்கப் பாதுகாப்பு</span>
+              <span class="lang-en">Encrypted Cloud Security</span>
+            </h4>
+            <p>
+              <span class="lang-ta">Google Firebase வழியாக பாதுகாப்பான அங்கீகாரம் மற்றும் அதிநவீன குறியாக்க நெறிமுறைகளுடன் (Encryption) தரவுகள் பாதுகாக்கப்படுகின்றன.</span>
+              <span class="lang-en">Authenticated securely via Google Firebase with modern TLS/SSL encryption and strict database security rules.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download & Call to Action -->
+  <section class="section" id="download">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="brand-medallion" style="margin: 0 auto 20px; width: 64px; height: 64px;">
+          <img src="./assets/images/app_logo.jpg" alt="Tamil Kavi">
+        </div>
+        <h2 class="cta-title">
+          <span class="lang-ta">உன் வரிகள் உலகை வெல்லட்டும்!</span>
+          <span class="lang-en">Let Your Verses Conquer the World!</span>
+        </h2>
+        <p class="cta-desc">
+          <span class="lang-ta">
+            இப்போதே 'தமிழ் கவி' செயலியைப் பதிவிறக்கி, தமிழின் கவிதை உலகத்தில் இணைந்து உங்கள் படைப்புகளை உலகெங்கும் கொண்டு செல்லுங்கள்.
+          </span>
+          <span class="lang-en">
+            Download Tamil Kavi today on Google Play and join a vibrant global community celebrating the timeless beauty of Tamil poetry.
+          </span>
+        </p>
+        <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+          <a href="https://play.google.com/store/apps/details?id=com.kavithaigalvp.app" target="_blank" rel="noopener noreferrer" class="btn-cta" style="font-size: 1rem; padding: 12px 26px;">
+            <i class="fab fa-google-play" style="font-size: 1.2rem;"></i>
+            <span class="lang-ta">Google Play இல் பதிவிறக்குக</span>
+            <span class="lang-en">Download on Google Play</span>
+          </a>
+          <a href="./privacy-policy.html" class="btn-secondary" style="font-size: 1rem; padding: 12px 26px;">
+            <i class="fas fa-shield-alt"></i>
+            <span class="lang-ta">தனியுரிமைக் கொள்கை படிக்க</span>
+            <span class="lang-en">Read Privacy Policy</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Summary -->
+        <div class="footer-brand">
+          <a href="./index.html" class="brand-link">
+            <div class="brand-medallion" style="width: 42px; height: 42px;">
+              <img src="./assets/images/app_logo.jpg" alt="Tamil Kavi">
+            </div>
+            <div class="brand-meta">
+              <span class="brand-title" style="font-size: 1.25rem;">
+                <span class="lang-ta">தமிழ் கவி</span>
+                <span class="lang-en">Tamil Kavi</span>
+              </span>
+              <span class="brand-subtitle">TAMIL KAVI SUITE</span>
+            </div>
+          </a>
+          <p>
+            <span class="lang-ta">
+              அன்னைத் தமிழின் சொல்வளம், கவிதை நயம், மற்றும் பாட்டுத் திறத்தை உலகெங்கும் உள்ள தமிழ் நெஞ்சங்களுக்குக் கொண்டு சேர்க்கும் ஒரு தூய இலக்கிய மேடை.
+            </span>
+            <span class="lang-en">
+              A dedicated literary sanctuary celebrating classical and contemporary Tamil poetry for readers and creators worldwide.
+            </span>
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-heading">
+            <span class="lang-ta">வழிகாட்டி</span>
+            <span class="lang-en">Navigation</span>
+          </h4>
+          <ul class="footer-links">
+            <li><a href="#home"><span class="lang-ta">முகப்பு</span><span class="lang-en">Home</span></a></li>
+            <li><a href="#features"><span class="lang-ta">சிறப்பம்சங்கள்</span><span class="lang-en">Features</span></a></li>
+            <li><a href="#typing-demo"><span class="lang-ta">தமிழ் தட்டச்சு</span><span class="lang-en">Tamil Typing</span></a></li>
+            <li><a href="#gallery"><span class="lang-ta">காட்சியகம்</span><span class="lang-en">Gallery</span></a></li>
+            <li><a href="#download"><span class="lang-ta">பதிவிறக்கம்</span><span class="lang-en">Download</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Legal & Compliance Links -->
+        <div>
+          <h4 class="footer-heading">
+            <span class="lang-ta">சட்டம் & தனியுரிமை</span>
+            <span class="lang-en">Legal & Compliance</span>
+          </h4>
+          <ul class="footer-links">
+            <li><a href="./privacy-policy.html"><span class="lang-ta">தனியுரிமைக் கொள்கை</span><span class="lang-en">Privacy Policy</span></a></li>
+            <li><a href="./terms.html"><span class="lang-ta">விதிமுறைகள்</span><span class="lang-en">Terms of Service</span></a></li>
+            <li><a href="./delete-account.html"><span class="lang-ta">கணக்கு நீக்கம்</span><span class="lang-en">Delete Account</span></a></li>
+            <li><a href="mailto:pugazh.developer@gmail.com"><span class="lang-ta">உதவி மையம்</span><span class="lang-en">Support</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Tamil Classical Verse -->
+        <div>
+          <h4 class="footer-heading">
+            <span class="lang-ta">சங்க இலக்கிய வாக்கு</span>
+            <span class="lang-en">Classical Verse</span>
+          </h4>
+          <div class="footer-quote">
+            <span class="lang-ta">
+              "யாதும் ஊரே யாவரும் கேளிர்<br>
+              தீதும் நன்றும் பிறர்தர வாரா!"<br>
+              <span style="font-size: 0.8rem; color: var(--gold-dark); display: block; margin-top: 6px;">— புறநானூறு 192</span>
+            </span>
+            <span class="lang-en">
+              "To us all towns are one, all humans our kin;<br>
+              Good and evil do not come from others!"<br>
+              <span style="font-size: 0.8rem; color: var(--gold-dark); display: block; margin-top: 6px;">— Purananuru 192</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-credits">
+          <span class="lang-ta">
+            வடிவமைப்பு & உருவாக்கம்: <strong>புகழ் வேங்கட் (Pugazh Venkat)</strong> • &copy; 2026 Tamil Kavi. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.
+          </span>
+          <span class="lang-en">
+            Designed & Developed by <strong>Pugazh Venkat</strong> • &copy; 2026 Tamil Kavi. All rights reserved.
+          </span>
+        </div>
+        <div>
+          <span style="color: var(--text-dim); font-size: 0.8rem;">Package: com.kavithaigalvp.app • v1.0.0+1</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./script.js"></script>
+</body>
+</html>
